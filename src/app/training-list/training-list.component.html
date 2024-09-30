@@ -1,0 +1,8 @@
+<h3>Liste des formations &#64;Input</h3>
+<ul>
+    @for( t of trainings; track $index){
+    <li>
+        <app-training [name]="t.name" [duration]="t.nbDays" [isFree]="t.isFree"></app-training>
+    </li>
+    }
+</ul>
